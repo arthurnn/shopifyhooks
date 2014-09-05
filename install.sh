@@ -8,7 +8,7 @@ if [ -d "/home/vagrant/src/shopify/.git/hooks" ]; then
 
     sed "s/shopifyhooks-$hook_version\///g" shopifyhooks.log > shopifyhooks.log.tmp && mv shopifyhooks.log.tmp shopifyhooks.log
 
-    echo "Done."
+    echo "Installed Shopify hooks version $hook_version."
     exit 0
 else
     echo "You are not inside vagrant, please vagrant-up!"
