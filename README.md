@@ -5,13 +5,13 @@ Shopify git hooks
 ### Installation
 
 ```
-bash <(curl -s https://raw.githubusercontent.com/arthurnn/shopifyhooks/master/install.sh)
+bash <(curl -s https://raw.githubusercontent.com/arthurnn/shopifyhooks/master/install.sh?_ts=$(date +%s))
 ```
 
 ### Uninstall
 
 ```
-bash <(curl -s https://raw.githubusercontent.com/arthurnn/shopifyhooks/master/uninstall.sh)
+bash <(curl -s https://raw.githubusercontent.com/arthurnn/shopifyhooks/master/uninstall.sh?_ts=$(date +%s))
 ```
 
 Or
