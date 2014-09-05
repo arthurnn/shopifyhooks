@@ -1,0 +1,9 @@
+#!/bin/sh
+if git rev-parse --verify HEAD >/dev/null 2>&1
+then
+    against=HEAD
+else
+    # Initial commit: diff against an empty tree object
+    against=28b8dea680e154fd275f8ee4d1081edad36cafe0
+fi
+bundle exec rubocop $(git diff-index --cached --name-only $against | grep .rb)
