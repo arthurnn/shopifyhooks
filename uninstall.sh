@@ -1,6 +1,7 @@
 #!/bin/sh
 
 if [ -d "/home/vagrant/src/shopify/.git/hooks" ]; then
+    cd /home/vagrant/src/shopify/.git/hooks
     rm -f $(cat shopifyhooks.log) shopifyhooks.log
     echo "Done."
     exit 0
