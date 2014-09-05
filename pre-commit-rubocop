@@ -6,4 +6,4 @@ else
     # Initial commit: diff against an empty tree object
     against=28b8dea680e154fd275f8ee4d1081edad36cafe0
 fi
-bundle exec rubocop $(git diff-index --cached --name-only $against | grep .rb)
+bundle exec rubocop $(git diff-index --cached --name-only $against | grep "\.rb$")
