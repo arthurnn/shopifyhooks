@@ -6,7 +6,7 @@ if [ -d "/home/vagrant/src/shopify/.git/hooks" ]; then
     wget -qO- "https://github.com/arthurnn/shopifyhooks/archive/v$hook_version.tar.gz" | tar xzv --strip-components=1 --index-file=shopifyhooks.log
     rm -f README.md install.sh
 
-    sed 's/shopifyhooks-$hook_version\///g' shopifyhooks.log > shopifyhooks.log.tmp && mv shopifyhooks.log.tmp shopifyhooks.log
+    sed "s/shopifyhooks-$hook_version\///g" shopifyhooks.log > shopifyhooks.log.tmp && mv shopifyhooks.log.tmp shopifyhooks.log
 
     echo "Done."
     exit 0
