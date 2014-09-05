@@ -21,8 +21,13 @@ cd /home/vagrant/src/shopify/.git/hooks
 ./uninstall.sh
 ```
 
-
 ### What is in here?
 pre-commit git hooks:
   - Check for whitespaces on files
   - rubocop check
+
+
+### F.A.Q
+
+What if I want to skip the hooks in one commit:
+  - You should not do that, but if you need it, you can add -n to the commit command: `git commit -n`
