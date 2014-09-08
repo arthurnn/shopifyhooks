@@ -1,6 +1,6 @@
 #!/bin/sh
 
-hook_version=0.0.7
+hook_version=0.0.8
 if [ -d "/home/vagrant/src/shopify/.git/hooks" ]; then
     cd /home/vagrant/src/shopify/.git/hooks
     wget -qO- "https://github.com/arthurnn/shopifyhooks/archive/v$hook_version.tar.gz" | tar xzv --strip-components=1 --index-file=shopifyhooks.log
