@@ -9,5 +9,5 @@ fi
 
 files=$(git diff-index --cached --diff-filter=ACMRTUXB --name-only $against | grep "\.rb$")
 if [[ -n $files ]]; then
-    bundle exec rubocop $files
+    bundle exec rubocop --force-exclusion $files
 fi
